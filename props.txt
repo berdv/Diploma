@@ -1,0 +1,1 @@
+diameter drill_materials drill_ratio sqlite_sequence drill_extra_cost customers drill_material_group drill_group_list drill_bill drill_order drill_prices saw_order saw_bill tools saw_group_list saw_materials saw_material_group saw_prices
