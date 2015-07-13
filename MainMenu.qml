@@ -87,7 +87,7 @@ Rectangle{
                     width: parent.width
                     horizontalAlignment: Qt.AlignHCenter
                     verticalAlignment: Qt.AlignVCenter
-                    text: "V 1.0"
+                    text: "V 1.2"
                     minimumPixelSize: 40
                     fontSizeMode: Text.Fit
                     font.pixelSize: parent.height/2

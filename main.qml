@@ -8,9 +8,9 @@ import DB 1.0
 
 ApplicationWindow {
     id: app
-    title: qsTr("DA_App")
-    width: 560
-    height: 800
+    title: qsTr("DA")
+    width: 400
+    height: 640
     visible: true
 
     color: "#efefef"
