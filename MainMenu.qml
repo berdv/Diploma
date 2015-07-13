@@ -73,8 +73,6 @@ Rectangle{
             color: "transparent"
             Image{
                 anchors.fill: parent
-                //source: "assets:/ExtraSources/2.png"
-                //source: "/data/data/org.qtproject.example.DA/files/2.png";
                 source: "images/icon2.png"
             }
 
@@ -86,7 +84,6 @@ Rectangle{
                 color: "transparent"
                 height: 80
                 Text{
-                    //height: parent.height
                     width: parent.width
                     horizontalAlignment: Qt.AlignHCenter
                     verticalAlignment: Qt.AlignVCenter
@@ -113,17 +110,17 @@ Rectangle{
                 id: bg
                 anchors.fill: parent
             }
+
+            //Eats mouse events
             MouseArea{
                 anchors.fill: parent
                 enabled: ei.visible
-                //Eats mouse events
             }
             Loader{
                 width: parent.width
                 height: parent.height - 140
                 anchors.top: parent.top
                 id: mainloader
-                //property type name: value
                 focus: true
                 source: ei.nextPage
                 anchors.fill: parent
@@ -131,22 +128,11 @@ Rectangle{
                 onLoaded: {
                     if(source == "qrc:/AddMenu.qml")
                         item.pageItem = ei
-                    //console.log("AddMenu is loaded")
                 }
 
                 onSourceChanged: {
-                    //Vars.started_f = false;
                     Vars.added_f = false
                 }
-
-                //                onKeyback: {
-                //                    if(ei.prevPage == ei.nextPage){
-                //                        ei.prevPage = ""
-                //                        Vars.started_f = false
-                //                    }
-                //                    ei.nextPage = ei.prevPage; console.log("I've returned previous page")
-                //                }
-
             }
         }
     }
